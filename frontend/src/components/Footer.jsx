@@ -150,8 +150,8 @@ const Footer = () => {
       <div className="border-t border-slate-800">
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-2 text-sm text-slate-400">
-            <p>© 2024 Himalayan Escape. All rights reserved.</p>
-            <p>Designed with ❤️ for Mountain Lovers</p>
+            <p>© 2025 Himalayan Escape. All rights reserved.</p>
+            <p>Designed with Gashwa Technologies</p>
           </div>
         </div>
       </div>

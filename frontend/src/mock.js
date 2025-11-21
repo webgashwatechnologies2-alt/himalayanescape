@@ -17,7 +17,7 @@ export const heroSlides = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1549211331-df6fd46a8e5f?w=1920&q=80",
+    image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80",
     title: "Himachal Paradise",
     subtitle: "Where Mountains Touch the Sky",
     description: "Create memories in the lap of nature's grandeur"
@@ -149,6 +149,163 @@ export const himachalPackages = [
       "Limited network connectivity during trek",
       "Best time: April to June, September to November"
     ]
+  },
+  {
+    id: 7,
+    name: "Kullu Manali Honeymoon Special",
+    duration: "5 Days / 4 Nights",
+    image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80",
+    description: "Romantic getaway package with candlelight dinners, scenic drives, and cozy mountain stays.",
+    price: "₹22,999",
+    highlights: ["Private Transfers", "Candlelight Dinner", "Couple Activities", "Decorated Room"],
+    images: [
+      "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80",
+      "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=800&q=80",
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80"
+    ],
+    itinerary: [
+      { day: 1, title: "Arrival in Manali", description: "Arrive in Manali. Private transfer to your honeymoon suite. Welcome drink and flower decoration. Evening leisure walk." },
+      { day: 2, title: "Solang Valley & Adventure", description: "Visit Solang Valley. Enjoy couple activities like paragliding or a romantic cable car ride. Candlelight dinner in the evening." },
+      { day: 3, title: "Manali Sightseeing", description: "Visit Hadimba Temple and Vashisht Hot Springs. Romantic lunch at a riverside cafe. Shopping at Mall Road." },
+      { day: 4, title: "Kullu & Manikaran", description: "Day trip to Kullu for shawl shopping and Manikaran Sahib. River rafting in Kullu (optional)." },
+      { day: 5, title: "Departure", description: "Check out with beautiful memories. Private transfer to bus stand/airport." }
+    ],
+    inclusions: [
+      "4 Nights in Honeymoon Suite",
+      "Daily Breakfast & Dinner",
+      "One Candlelight Dinner",
+      "Flower Decoration",
+      "Private Cab for all transfers",
+      "Honeymoon Cake"
+    ],
+    exclusions: [
+      "Lunch",
+      "Adventure activities",
+      "Personal expenses",
+      "Travel insurance"
+    ],
+    importantInfo: [
+      "Carry valid marriage certificate (sometimes requested)",
+      "Book adventure activities in advance during peak season",
+      "Pack warm clothes for evenings"
+    ]
+  },
+  {
+    id: 8,
+    name: "Bir Billing Adventure Trek",
+    duration: "3 Days / 2 Nights",
+    image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
+    description: "Perfect for adventure seekers with paragliding at Asia's best site and monastery visits.",
+    price: "₹9,999",
+    highlights: ["Paragliding", "Trekking", "Monasteries", "Adventure Sports"],
+    images: [
+      "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80"
+    ],
+    itinerary: [
+      { day: 1, title: "Arrival in Bir", description: "Arrive in Bir. Check into camp/hotel. Visit the famous Bir Monastery. Watch paragliders landing at sunset point." },
+      { day: 2, title: "Paragliding & Trekking", description: "Drive to Billing (takeoff site). Experience 15-20 mins tandem paragliding. Afternoon trek to waterfalls." },
+      { day: 3, title: "Departure", description: "Morning cycling in Bir (optional). Visit Deer Park Institute. Departure in the evening." }
+    ],
+    inclusions: [
+      "2 Nights accommodation",
+      "Breakfast and Dinner",
+      "One Paragliding session",
+      "Local sightseeing",
+      "Bonfire and Music"
+    ],
+    exclusions: [
+      "Lunch",
+      "GoPro video of paragliding",
+      "Personal expenses",
+      "Travel to/from Bir"
+    ],
+    importantInfo: [
+      "Weight limit for paragliding: 95kg",
+      "Wear comfortable sports shoes",
+      "Paragliding subject to weather conditions"
+    ]
+  },
+  {
+    id: 9,
+    name: "Dalhousie Khajjiar Escape",
+    duration: "4 Days / 3 Nights",
+    image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+    description: "Explore the mini Switzerland of India with lush meadows, colonial architecture, and peace.",
+    price: "₹13,999",
+    highlights: ["Khajjiar Lake", "St. John's Church", "Kalatop Wildlife", "Colonial Heritage"],
+    images: [
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://images.unsplash.com/photo-1549211331-df6fd46a8e5f?w=800&q=80"
+    ],
+    itinerary: [
+      { day: 1, title: "Arrival in Dalhousie", description: "Arrive in Dalhousie. Check in. Evening walk on Mall Road and visit St. John's Church." },
+      { day: 2, title: "Khajjiar Excursion", description: "Full day trip to Khajjiar (Mini Switzerland). Enjoy the meadows and lake. Visit Kalatop Wildlife Sanctuary on return." },
+      { day: 3, title: "Chamba & Sightseeing", description: "Day trip to Chamba town or relax in Dalhousie visiting Satdhara Falls and Panchpula." },
+      { day: 4, title: "Departure", description: "Check out. Transfer to Pathankot railway station/bus stand." }
+    ],
+    inclusions: [
+      "3 Nights accommodation",
+      "Daily Breakfast & Dinner",
+      "Sightseeing by private cab",
+      "Toll taxes and parking"
+    ],
+    exclusions: [
+      "Lunch",
+      "Entry fees",
+      "Pony rides in Khajjiar",
+      "Personal expenses"
+    ],
+    importantInfo: [
+      "Carry light woolens in summer",
+      "Roads can be curvy, carry motion sickness meds",
+      "Best time: March to June"
+    ]
+  },
+  {
+    id: 10,
+    name: "Complete Himachal Circuit",
+    duration: "10 Days / 9 Nights",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    description: "Comprehensive tour covering Shimla, Manali, Dharamshala, Dalhousie, and more destinations.",
+    price: "₹35,999",
+    highlights: ["Multiple Destinations", "Complete Experience", "Guided Tours", "All-Inclusive"],
+    images: [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+      "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80"
+    ],
+    itinerary: [
+      { day: 1, title: "Shimla Arrival", description: "Arrive Shimla. Mall Road & Ridge." },
+      { day: 2, title: "Shimla & Kufri", description: "Sightseeing in Shimla and Kufri." },
+      { day: 3, title: "Shimla to Manali", description: "Scenic drive to Manali via Kullu." },
+      { day: 4, title: "Manali Local", description: "Hadimba Temple, Vashisht, Old Manali." },
+      { day: 5, title: "Solang Valley", description: "Adventure activities in Solang." },
+      { day: 6, title: "Manali to Dharamshala", description: "Drive to Dharamshala. Visit Cricket Stadium." },
+      { day: 7, title: "Dharamshala & McLeodganj", description: "Dalai Lama Temple, Bhagsu Falls." },
+      { day: 8, title: "Dharamshala to Dalhousie", description: "Drive to Dalhousie. Evening at leisure." },
+      { day: 9, title: "Khajjiar Day Trip", description: "Visit Mini Switzerland of India." },
+      { day: 10, title: "Departure", description: "Transfer to Pathankot for departure." }
+    ],
+    inclusions: [
+      "9 Nights accommodation",
+      "Daily Breakfast & Dinner",
+      "Complete transportation by private cab",
+      "All toll taxes and driver allowance"
+    ],
+    exclusions: [
+      "Lunch",
+      "Monument entry fees",
+      "Adventure activities",
+      "Personal expenses"
+    ],
+    importantInfo: [
+      "Long drives involved between cities",
+      "Pack for varied weather conditions",
+      "Start early for inter-city transfers"
+    ]
   }
 ];
 
@@ -160,16 +317,78 @@ export const spitiPackages = [
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
     description: "Complete circuit covering Key Monastery, Chandratal Lake, and ancient villages in the cold desert.",
     price: "₹32,999",
-    highlights: ["Key Monastery", "Chandratal Lake", "Kaza", "Pin Valley"]
+    highlights: ["Key Monastery", "Chandratal Lake", "Kaza", "Pin Valley"],
+    images: [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80"
+    ],
+    itinerary: [
+      { day: 1, title: "Arrival in Manali", description: "Arrive Manali. Acclimatization and preparation." },
+      { day: 2, title: "Manali to Kaza", description: "Drive via Atal Tunnel and Kunzum Pass to Kaza." },
+      { day: 3, title: "Kaza Sightseeing", description: "Key Monastery, Kibber, and Chicham Bridge." },
+      { day: 4, title: "Highest Villages", description: "Visit Hikkim, Komic, and Langza." },
+      { day: 5, title: "Pin Valley", description: "Day trip to Pin Valley National Park." },
+      { day: 6, title: "Kaza to Chandratal", description: "Drive to Chandratal Lake. Camping near lake." },
+      { day: 7, title: "Chandratal to Manali", description: "Return drive to Manali via Rohtang/Atal Tunnel." },
+      { day: 8, title: "Departure", description: "Departure from Manali." }
+    ],
+    inclusions: [
+      "Accommodation in Hotels/Camps",
+      "Breakfast and Dinner",
+      "SUV for Spiti terrain",
+      "Inner Line Permits"
+    ],
+    exclusions: [
+      "Lunch",
+      "Personal expenses",
+      "Monastery entry fees"
+    ],
+    importantInfo: [
+      "High altitude sickness precautions needed",
+      "Roads can be rough",
+      "Limited mobile network (BSNL/Jio works best)"
+    ]
   },
   {
     id: 5,
     name: "Kinnaur Spiti Explorer",
     duration: "10 Days / 9 Nights",
-    image: "https://images.unsplash.com/photo-1549211331-df6fd46a8e5f?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
     description: "Extended journey through Kinnaur's apple orchards to Spiti's Buddhist monasteries and landscapes.",
     price: "₹38,999",
-    highlights: ["Sangla Valley", "Kalpa", "Tabo Monastery", "Dhankar Lake"]
+    highlights: ["Sangla Valley", "Kalpa", "Tabo Monastery", "Dhankar Lake"],
+    images: [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+      "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80"
+    ],
+    itinerary: [
+      { day: 1, title: "Shimla to Sarahan", description: "Drive to Sarahan. Visit Bhimakali Temple." },
+      { day: 2, title: "Sarahan to Sangla", description: "Drive to Sangla Valley. Visit Chitkul (last village)." },
+      { day: 3, title: "Sangla to Kalpa", description: "Drive to Kalpa. View of Kinner Kailash." },
+      { day: 4, title: "Kalpa to Tabo", description: "Enter Spiti Valley. Visit Nako Lake and Tabo Monastery." },
+      { day: 5, title: "Tabo to Kaza", description: "Visit Dhankar Monastery en route to Kaza." },
+      { day: 6, title: "Kaza Sightseeing", description: "Key Monastery and high altitude villages." },
+      { day: 7, title: "Kaza to Chandratal", description: "Drive to Chandratal Lake. Camping." },
+      { day: 8, title: "Chandratal to Manali", description: "Drive to Manali." },
+      { day: 9, title: "Manali Leisure", description: "Rest day in Manali." },
+      { day: 10, title: "Departure", description: "Departure from Manali." }
+    ],
+    inclusions: [
+      "Accommodation",
+      "Meals (Breakfast & Dinner)",
+      "Transport",
+      "Permits"
+    ],
+    exclusions: [
+      "Lunch",
+      "Personal expenses"
+    ],
+    importantInfo: [
+      "Long journey",
+      "Acclimatization is key"
+    ]
   },
   {
     id: 6,
@@ -178,7 +397,117 @@ export const spitiPackages = [
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
     description: "Experience Spiti in its most raw form during winter with frozen rivers and snow-clad monasteries.",
     price: "₹29,999",
-    highlights: ["Winter Landscapes", "Frozen Spiti River", "Snow Festivals", "Ice Stupas"]
+    highlights: ["Winter Landscapes", "Frozen Spiti River", "Snow Festivals", "Ice Stupas"],
+    images: [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+      "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80"
+    ],
+    itinerary: [
+      { day: 1, title: "Arrival in Shimla/Kalpa", description: "Winter drive is slow. Reach Kalpa." },
+      { day: 2, title: "Kalpa to Kaza", description: "Long drive on snow roads to Kaza." },
+      { day: 3, title: "Kaza Winter Life", description: "Experience -20 degrees. Visit Key Monastery." },
+      { day: 4, title: "Snow Leopard Sighting", description: "Expedition to find wildlife (luck based)." },
+      { day: 5, title: "Kaza Villages", description: "Visit frozen villages." },
+      { day: 6, title: "Kaza to Kalpa", description: "Return journey begins." },
+      { day: 7, title: "Departure", description: "Reach Shimla for departure." }
+    ],
+    inclusions: [
+      "Heated Homestays",
+      "All Meals",
+      "4x4 Vehicles with chains",
+      "Winter gear guidance"
+    ],
+    exclusions: [
+      "Personal winter clothing",
+      "Emergency evacuation"
+    ],
+    importantInfo: [
+      "Extreme cold (-20°C to -30°C)",
+      "Only for fit travelers",
+      "Itinerary subject to road closures"
+    ]
+  },
+  {
+    id: 11,
+    name: "Spiti Bike Expedition",
+    duration: "12 Days / 11 Nights",
+    image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
+    description: "Epic motorcycle journey through Spiti's challenging terrains, high passes, and remote villages.",
+    price: "₹45,999",
+    highlights: ["Motorcycle Adventure", "High Passes", "Remote Villages", "Support Vehicle"],
+    images: [
+      "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
+      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+    ],
+    itinerary: [
+      { day: 1, title: "Manali Arrival", description: "Bike allocation and test ride." },
+      { day: 2, title: "Manali to Jibhi", description: "Ride to Jibhi via Aut tunnel." },
+      { day: 3, title: "Jibhi to Sarahan", description: "Ride via Jalori Pass." },
+      { day: 4, title: "Sarahan to Chitkul", description: "Ride to the last village of India." },
+      { day: 5, title: "Chitkul to Kalpa", description: "Short ride to Kalpa." },
+      { day: 6, title: "Kalpa to Kaza", description: "Enter Spiti Valley." },
+      { day: 7, title: "Kaza Local", description: "Ride to Key, Kibber, Hikkim." },
+      { day: 8, title: "Kaza to Chandratal", description: "Off-road ride to the moon lake." },
+      { day: 9, title: "Chandratal to Manali", description: "The toughest stretch via Batal." },
+      { day: 10, title: "Manali Rest", description: "Buffer day/Rest." },
+      { day: 11, title: "Departure", description: "Trip ends." }
+    ],
+    inclusions: [
+      "Royal Enfield 500cc/Himalayan",
+      "Fuel",
+      "Mechanic & Support Vehicle",
+      "Accommodation & Meals"
+    ],
+    exclusions: [
+      "Riding Gear",
+      "Damage to bike",
+      "Personal expenses"
+    ],
+    importantInfo: [
+      "Valid Driving License mandatory",
+      "Previous riding experience in mountains required"
+    ]
+  },
+  {
+    id: 12,
+    name: "Spiti Photography Tour",
+    duration: "9 Days / 8 Nights",
+    image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
+    description: "Capture the stunning landscapes of Spiti with expert photography guidance at best locations.",
+    price: "₹36,999",
+    highlights: ["Photography Guide", "Best Locations", "Sunrise/Sunset Shoots", "Night Sky"],
+    images: [
+      "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80"
+    ],
+    itinerary: [
+      { day: 1, title: "Manali Arrival", description: "Briefing and gear check." },
+      { day: 2, title: "Manali to Kaza", description: "Landscape photography stops en route." },
+      { day: 3, title: "Kaza Monasteries", description: "Architecture and portrait photography at Key." },
+      { day: 4, title: "Langza & Komic", description: "Golden hour shoot at Buddha statue." },
+      { day: 5, title: "Pin Valley", description: "Wildlife and landscape photography." },
+      { day: 6, title: "Chandratal", description: "Sunset and Astro-photography at lake." },
+      { day: 7, title: "Chandratal to Manali", description: "Morning shoot and return drive." },
+      { day: 8, title: "Manali Editing Session", description: "Post-processing workshop." },
+      { day: 9, title: "Departure", description: "Trip ends." }
+    ],
+    inclusions: [
+      "Photography Mentor",
+      "Accommodation & Meals",
+      "Transport",
+      "Workshop sessions"
+    ],
+    exclusions: [
+      "Camera Gear",
+      "Personal expenses"
+    ],
+    importantInfo: [
+      "Carry tripod and extra batteries",
+      "Wide angle lens recommended"
+    ]
   }
 ];
 
@@ -236,7 +565,7 @@ export const galleryImages = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1549211331-df6fd46a8e5f?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80",
     title: "Valley Landscapes",
     category: "Spiti"
   },
@@ -257,6 +586,12 @@ export const galleryImages = [
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
     title: "High Altitude Lakes",
     category: "Spiti"
+  },
+    {
+    id: 7,
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
+    title: "Kullu Manali Honeymoon Special",
+    category: "Himachal"
   }
 ];
 

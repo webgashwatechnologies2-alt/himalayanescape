@@ -13,47 +13,6 @@ const HimachalPackages = () => {
     setEnquiryModalOpen(true);
   };
 
-  // Extended packages for display
-  const extendedPackages = [
-    ...himachalPackages,
-    {
-      id: 7,
-      name: "Kullu Manali Honeymoon Special",
-      duration: "5 Days / 4 Nights",
-      image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80",
-      description: "Romantic getaway package with candlelight dinners, scenic drives, and cozy mountain stays.",
-      price: "₹22,999",
-      highlights: ["Private Transfers", "Candlelight Dinner", "Couple Activities", "Decorated Room"]
-    },
-    {
-      id: 8,
-      name: "Bir Billing Adventure Trek",
-      duration: "3 Days / 2 Nights",
-      image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
-      description: "Perfect for adventure seekers with paragliding at Asia's best site and monastery visits.",
-      price: "₹9,999",
-      highlights: ["Paragliding", "Trekking", "Monasteries", "Adventure Sports"]
-    },
-    {
-      id: 9,
-      name: "Dalhousie Khajjiar Escape",
-      duration: "4 Days / 3 Nights",
-      image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
-      description: "Explore the mini Switzerland of India with lush meadows, colonial architecture, and peace.",
-      price: "₹13,999",
-      highlights: ["Khajjiar Lake", "St. John's Church", "Kalatop Wildlife", "Colonial Heritage"]
-    },
-    {
-      id: 10,
-      name: "Complete Himachal Circuit",
-      duration: "10 Days / 9 Nights",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
-      description: "Comprehensive tour covering Shimla, Manali, Dharamshala, Dalhousie, and more destinations.",
-      price: "₹35,999",
-      highlights: ["Multiple Destinations", "Complete Experience", "Guided Tours", "All-Inclusive"]
-    }
-  ];
-
   return (
     <div className="min-h-screen pt-24">
       {/* Hero Section */}
@@ -78,7 +37,7 @@ const HimachalPackages = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {extendedPackages.map((pkg) => (
+            {himachalPackages.map((pkg) => (
               <PackageCard key={pkg.id} package={pkg} onEnquiry={handleEnquiry} />
             ))}
           </div>

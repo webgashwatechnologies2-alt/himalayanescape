@@ -1,10 +1,30 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Star, MapPin, Phone, Mail, Award, Shield, Clock, Heart, DollarSign, Users, ArrowRight, Check } from 'lucide-react';
-import HeroSlider from '../components/HeroSlider';
-import PackageCard from '../components/PackageCard';
-import EnquiryModal from '../components/EnquiryModal';
-import { heroSlides, himachalPackages, spitiPackages, testimonials, galleryImages, whyChooseUs } from '../mock';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import {
+  Star,
+  MapPin,
+  Phone,
+  Mail,
+  Award,
+  Shield,
+  Clock,
+  Heart,
+  DollarSign,
+  Users,
+  ArrowRight,
+  Check,
+} from "lucide-react";
+import HeroSlider from "../components/HeroSlider";
+import PackageCard from "../components/PackageCard";
+import EnquiryModal from "../components/EnquiryModal";
+import {
+  heroSlides,
+  himachalPackages,
+  spitiPackages,
+  testimonials,
+  galleryImages,
+  whyChooseUs,
+} from "../mock";
 
 const Home = () => {
   const [enquiryModalOpen, setEnquiryModalOpen] = useState(false);
@@ -21,7 +41,7 @@ const Home = () => {
     DollarSign,
     Heart,
     Clock,
-    Users
+    Users,
   };
 
   return (
@@ -34,15 +54,24 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-sm text-teal-600 font-semibold mb-3 tracking-wider uppercase">About Us</h2>
+              <h2 className="text-sm text-teal-600 font-semibold mb-3 tracking-wider uppercase">
+                About Us
+              </h2>
               <h3 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-                Your Gateway to <span className="text-teal-600">Himalayan Adventures</span>
+                Your Gateway to{" "}
+                <span className="text-teal-600">Himalayan Adventures</span>
               </h3>
               <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                Himalayan Escape is your trusted partner for unforgettable journeys through the majestic Himalayas. With over a decade of experience, we specialize in crafting personalized tours that showcase the breathtaking beauty, rich culture, and thrilling adventures of Himachal Pradesh and Spiti Valley.
+                Himalayan Escape is your trusted partner for unforgettable
+                journeys through the majestic Himalayas. With over a decade of
+                experience, we specialize in crafting personalized tours that
+                showcase the breathtaking beauty, rich culture, and thrilling
+                adventures of Himachal Pradesh and Spiti Valley.
               </p>
               <p className="text-slate-600 text-lg leading-relaxed mb-8">
-                Our expert team is passionate about creating memories that last a lifetime, ensuring every traveler experiences the magic of the mountains with comfort, safety, and authenticity.
+                Our expert team is passionate about creating memories that last
+                a lifetime, ensuring every traveler experiences the magic of the
+                mountains with comfort, safety, and authenticity.
               </p>
               <Link
                 to="/about"
@@ -67,11 +96,14 @@ const Home = () => {
                   />
                 </div>
                 <div className="space-y-4 mt-8">
-                  <img
-                    src="https://images.unsplash.com/photo-1549211331-df6fd46a8e5f?w=400&q=80"
+                <img
+                    src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=400&q=80"
                     alt="Monastery"
                     className="rounded-2xl shadow-xl w-full h-64 object-cover"
                   />
+
+
+
                   <img
                     src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=400&q=80"
                     alt="Adventure"
@@ -87,7 +119,9 @@ const Home = () => {
                     <div className="text-sm text-slate-600">Years</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-teal-600">5000+</div>
+                    <div className="text-3xl font-bold text-teal-600">
+                      5000+
+                    </div>
                     <div className="text-sm text-slate-600">Travelers</div>
                   </div>
                   <div className="text-center">
@@ -105,17 +139,24 @@ const Home = () => {
       <section className="py-20 bg-slate-50 mt-12">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-sm text-teal-600 font-semibold mb-3 tracking-wider uppercase">Popular Tours</h2>
+            <h2 className="text-sm text-teal-600 font-semibold mb-3 tracking-wider uppercase">
+              Popular Tours
+            </h2>
             <h3 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
               Himachal Tour Packages
             </h3>
             <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-              Explore the stunning valleys, colonial hill stations, and adventure destinations of Himachal Pradesh
+              Explore the stunning valleys, colonial hill stations, and
+              adventure destinations of Himachal Pradesh
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {himachalPackages.map((pkg) => (
-              <PackageCard key={pkg.id} package={pkg} onEnquiry={handleEnquiry} />
+              <PackageCard
+                key={pkg.id}
+                package={pkg}
+                onEnquiry={handleEnquiry}
+              />
             ))}
           </div>
           <div className="text-center mt-10">
@@ -141,7 +182,8 @@ const Home = () => {
             Ready for Your Mountain Adventure?
           </h3>
           <p className="text-xl text-teal-50 mb-8 max-w-2xl mx-auto">
-            Let us create a customized itinerary that perfectly matches your dreams and budget
+            Let us create a customized itinerary that perfectly matches your
+            dreams and budget
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <button
@@ -164,17 +206,24 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-sm text-teal-600 font-semibold mb-3 tracking-wider uppercase">Off The Beaten Path</h2>
+            <h2 className="text-sm text-teal-600 font-semibold mb-3 tracking-wider uppercase">
+              Off The Beaten Path
+            </h2>
             <h3 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
               Spiti Valley Expeditions
             </h3>
             <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-              Journey to the remote cold desert, ancient monasteries, and pristine landscapes of Spiti Valley
+              Journey to the remote cold desert, ancient monasteries, and
+              pristine landscapes of Spiti Valley
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {spitiPackages.map((pkg) => (
-              <PackageCard key={pkg.id} package={pkg} onEnquiry={handleEnquiry} />
+              <PackageCard
+                key={pkg.id}
+                package={pkg}
+                onEnquiry={handleEnquiry}
+              />
             ))}
           </div>
           <div className="text-center mt-10">
@@ -193,7 +242,9 @@ const Home = () => {
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-sm text-teal-600 font-semibold mb-3 tracking-wider uppercase">Why Travel With Us</h2>
+            <h2 className="text-sm text-teal-600 font-semibold mb-3 tracking-wider uppercase">
+              Why Travel With Us
+            </h2>
             <h3 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
               Why Choose Himalayan Escape?
             </h3>
@@ -210,10 +261,17 @@ const Home = () => {
                   className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 group"
                 >
                   <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-teal-600 transition-colors">
-                    <IconComponent className="text-teal-600 group-hover:text-white transition-colors" size={32} />
+                    <IconComponent
+                      className="text-teal-600 group-hover:text-white transition-colors"
+                      size={32}
+                    />
                   </div>
-                  <h4 className="text-2xl font-bold text-slate-900 mb-3">{item.title}</h4>
-                  <p className="text-slate-600 leading-relaxed">{item.description}</p>
+                  <h4 className="text-2xl font-bold text-slate-900 mb-3">
+                    {item.title}
+                  </h4>
+                  <p className="text-slate-600 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               );
             })}
@@ -225,7 +283,9 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-sm text-teal-600 font-semibold mb-3 tracking-wider uppercase">Testimonials</h2>
+            <h2 className="text-sm text-teal-600 font-semibold mb-3 tracking-wider uppercase">
+              Testimonials
+            </h2>
             <h3 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
               What Our Clients Say
             </h3>
@@ -241,10 +301,16 @@ const Home = () => {
               >
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={i}
+                      size={18}
+                      className="fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
-                <p className="text-slate-700 mb-6 leading-relaxed italic">"{testimonial.text}"</p>
+                <p className="text-slate-700 mb-6 leading-relaxed italic">
+                  "{testimonial.text}"
+                </p>
                 <div className="flex items-center gap-3">
                   <img
                     src={testimonial.image}
@@ -252,12 +318,18 @@ const Home = () => {
                     className="w-12 h-12 rounded-full object-cover"
                   />
                   <div>
-                    <p className="font-semibold text-slate-900">{testimonial.name}</p>
-                    <p className="text-sm text-slate-500">{testimonial.location}</p>
+                    <p className="font-semibold text-slate-900">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-sm text-slate-500">
+                      {testimonial.location}
+                    </p>
                   </div>
                 </div>
                 <div className="mt-4 pt-4 border-t border-slate-200">
-                  <p className="text-sm text-teal-600 font-medium">{testimonial.tour}</p>
+                  <p className="text-sm text-teal-600 font-medium">
+                    {testimonial.tour}
+                  </p>
                 </div>
               </div>
             ))}
@@ -269,12 +341,15 @@ const Home = () => {
       <section className="py-20 bg-slate-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-sm text-teal-400 font-semibold mb-3 tracking-wider uppercase">Our Gallery</h2>
+            <h2 className="text-sm text-teal-400 font-semibold mb-3 tracking-wider uppercase">
+              Our Gallery
+            </h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Moments Worth Capturing
             </h3>
             <p className="text-slate-300 text-lg max-w-2xl mx-auto">
-              A glimpse into the stunning landscapes and adventures that await you
+              A glimpse into the stunning landscapes and adventures that await
+              you
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -290,7 +365,9 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                   <div>
-                    <p className="text-white font-bold text-lg">{image.title}</p>
+                    <p className="text-white font-bold text-lg">
+                      {image.title}
+                    </p>
                     <p className="text-teal-400 text-sm">{image.category}</p>
                   </div>
                 </div>

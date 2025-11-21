@@ -13,29 +13,6 @@ const SpitiPackages = () => {
     setEnquiryModalOpen(true);
   };
 
-  // Extended packages
-  const extendedPackages = [
-    ...spitiPackages,
-    {
-      id: 11,
-      name: "Spiti Bike Expedition",
-      duration: "12 Days / 11 Nights",
-      image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
-      description: "Epic motorcycle journey through Spiti's challenging terrains, high passes, and remote villages.",
-      price: "₹45,999",
-      highlights: ["Motorcycle Adventure", "High Passes", "Remote Villages", "Support Vehicle"]
-    },
-    {
-      id: 12,
-      name: "Spiti Photography Tour",
-      duration: "9 Days / 8 Nights",
-      image: "https://images.unsplash.com/photo-1549211331-df6fd46a8e5f?w=800&q=80",
-      description: "Capture the stunning landscapes of Spiti with expert photography guidance at best locations.",
-      price: "₹36,999",
-      highlights: ["Photography Guide", "Best Locations", "Sunrise/Sunset Shoots", "Night Sky"]
-    }
-  ];
-
   return (
     <div className="min-h-screen pt-24">
       {/* Hero Section */}
@@ -71,7 +48,7 @@ const SpitiPackages = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {extendedPackages.map((pkg) => (
+            {spitiPackages.map((pkg) => (
               <PackageCard key={pkg.id} package={pkg} onEnquiry={handleEnquiry} />
             ))}
           </div>
@@ -89,7 +66,7 @@ const SpitiPackages = () => {
             <p className="text-slate-600 text-lg leading-relaxed mb-8">
               The valley remains cut off from the rest of the world for about 6 months during winter due to heavy snowfall. Best time to visit is from May to October when the roads are accessible and weather is favorable.
             </p>
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-xl shadow-md">
                 <h4 className="font-bold text-slate-900 mb-2">Best Time to Visit</h4>

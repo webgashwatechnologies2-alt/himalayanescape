@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Phone, Mail } from 'lucide-react';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, ChevronDown, Phone, Mail } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,11 +15,17 @@ const Header = () => {
       <div className="bg-gradient-to-r from-slate-900 to-slate-800 text-white py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-4">
-            <a href="tel:+919876543210" className="flex items-center gap-2 hover:text-teal-400 transition-colors">
+            <a
+              href="tel:+919876543210"
+              className="flex items-center gap-2 hover:text-teal-400 transition-colors"
+            >
               <Phone size={14} />
               <span>+91 98765 43210</span>
             </a>
-            <a href="mailto:info@himalayanescape.com" className="flex items-center gap-2 hover:text-teal-400 transition-colors">
+            <a
+              href="mailto:info@himalayanescape.com"
+              className="flex items-center gap-2 hover:text-teal-400 transition-colors"
+            >
               <Mail size={14} />
               <span>info@himalayanescape.com</span>
             </a>
@@ -46,7 +52,7 @@ const Header = () => {
             <Link
               to="/"
               className={`font-medium transition-colors hover:text-teal-600 ${
-                isActive('/') ? 'text-teal-600' : 'text-slate-700'
+                isActive("/") ? "text-teal-600" : "text-slate-700"
               }`}
             >
               Home
@@ -54,44 +60,55 @@ const Header = () => {
             <Link
               to="/about"
               className={`font-medium transition-colors hover:text-teal-600 ${
-                isActive('/about') ? 'text-teal-600' : 'text-slate-700'
+                isActive("/about") ? "text-teal-600" : "text-slate-700"
               }`}
             >
               About Us
             </Link>
-            
+
             {/* Packages Dropdown */}
             <div
               className="relative"
               onMouseEnter={() => setPackagesOpen(true)}
               onMouseLeave={() => setPackagesOpen(false)}
             >
+              {/* Button */}
               <button className="font-medium text-slate-700 hover:text-teal-600 transition-colors flex items-center gap-1">
                 Packages
-                <ChevronDown size={16} className={`transition-transform ${packagesOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform ${
+                    packagesOpen ? "rotate-180" : ""
+                  }`}
+                />
               </button>
-              {packagesOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-[200px]">
-                  <Link
-                    to="/packages/himachal"
-                    className="block px-4 py-2 text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
-                  >
-                    Himachal Packages
-                  </Link>
-                  <Link
-                    to="/packages/spiti"
-                    className="block px-4 py-2 text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
-                  >
-                    Spiti Packages
-                  </Link>
-                </div>
-              )}
+
+              {/* Dropdown */}
+              <div
+                className={`absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-[200px] transition-all duration-150 ${
+                  packagesOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                }`}
+              >
+                <Link
+                  to="/packages/himachal"
+                  className="block px-4 py-2 text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
+                >
+                  Himachal Packages
+                </Link>
+
+                <Link
+                  to="/packages/spiti"
+                  className="block px-4 py-2 text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
+                >
+                  Spiti Packages
+                </Link>
+              </div>
             </div>
 
             <Link
               to="/contact"
               className={`font-medium transition-colors hover:text-teal-600 ${
-                isActive('/contact') ? 'text-teal-600' : 'text-slate-700'
+                isActive("/contact") ? "text-teal-600" : "text-slate-700"
               }`}
             >
               Contact
@@ -118,7 +135,7 @@ const Header = () => {
               <Link
                 to="/"
                 className={`font-medium ${
-                  isActive('/') ? 'text-teal-600' : 'text-slate-700'
+                  isActive("/") ? "text-teal-600" : "text-slate-700"
                 }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -127,7 +144,7 @@ const Header = () => {
               <Link
                 to="/about"
                 className={`font-medium ${
-                  isActive('/about') ? 'text-teal-600' : 'text-slate-700'
+                  isActive("/about") ? "text-teal-600" : "text-slate-700"
                 }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -151,7 +168,7 @@ const Header = () => {
               <Link
                 to="/contact"
                 className={`font-medium ${
-                  isActive('/contact') ? 'text-teal-600' : 'text-slate-700'
+                  isActive("/contact") ? "text-teal-600" : "text-slate-700"
                 }`}
                 onClick={() => setIsOpen(false)}
               >
