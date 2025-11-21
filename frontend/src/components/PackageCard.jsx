@@ -1,11 +1,21 @@
 import React from 'react';
-import { Clock, MapPin, Star } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Clock, MapPin, Star, ArrowRight } from 'lucide-react';
 
 const PackageCard = ({ package: pkg, onEnquiry }) => {
+  const navigate = useNavigate();
+
+  const handleViewDetails = () => {
+    navigate(`/package/${pkg.id}`);
+  };
+
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
       {/* Image */}
-      <div className="relative h-64 overflow-hidden">
+      <div 
+        className="relative h-64 overflow-hidden cursor-pointer"
+        onClick={handleViewDetails}
+      >
         <img
           src={pkg.image}
           alt={pkg.name}
@@ -14,11 +24,20 @@ const PackageCard = ({ package: pkg, onEnquiry }) => {
         <div className="absolute top-4 right-4 bg-teal-600 text-white px-4 py-2 rounded-full font-bold shadow-lg">
           {pkg.price}
         </div>
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+          <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-white text-slate-900 px-6 py-3 rounded-full font-semibold flex items-center gap-2">
+            View Details
+            <ArrowRight size={20} />
+          </div>
+        </div>
       </div>
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-teal-600 transition-colors">
+        <h3 
+          className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-teal-600 transition-colors cursor-pointer"
+          onClick={handleViewDetails}
+        >
           {pkg.name}
         </h3>
         
@@ -48,13 +67,21 @@ const PackageCard = ({ package: pkg, onEnquiry }) => {
           </div>
         )}
 
-        {/* CTA Button */}
-        <button
-          onClick={() => onEnquiry(pkg)}
-          className="w-full bg-slate-900 text-white py-3 rounded-full font-semibold hover:bg-teal-600 transition-colors mt-4"
-        >
-          Send Enquiry
-        </button>
+        {/* CTA Buttons */}
+        <div className="flex gap-3 mt-4">
+          <button
+            onClick={handleViewDetails}
+            className="flex-1 border-2 border-slate-900 text-slate-900 py-3 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition-colors flex items-center justify-center gap-2"
+          >
+            View Details
+          </button>
+          <button
+            onClick={() => onEnquiry(pkg)}
+            className="flex-1 bg-teal-600 text-white py-3 rounded-full font-semibold hover:bg-teal-700 transition-colors"
+          >
+            Enquiry
+          </button>
+        </div>
       </div>
     </div>
   );
