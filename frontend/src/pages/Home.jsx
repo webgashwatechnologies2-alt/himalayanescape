@@ -218,7 +218,7 @@ const Home = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {spitiPackages.map((pkg) => (
+            {spitiPackages.slice(0, 3).map((pkg) => (
               <PackageCard
                 key={pkg.id}
                 package={pkg}
