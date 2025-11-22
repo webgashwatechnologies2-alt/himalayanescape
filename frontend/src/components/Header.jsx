@@ -175,13 +175,24 @@ const Header = () => {
               >
                 Contact
               </Link>
-              <button className="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors">
+              <button
+                onClick={() => {
+                  setEnquiryModalOpen(true);
+                  setIsOpen(false);
+                }}
+                className="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors"
+              >
                 Book Now
               </button>
             </div>
           </div>
         )}
       </nav>
+      {/* Enquiry Modal */}
+      <EnquiryModal
+        isOpen={enquiryModalOpen}
+        onClose={() => setEnquiryModalOpen(false)}
+      />
     </header>
   );
 };
