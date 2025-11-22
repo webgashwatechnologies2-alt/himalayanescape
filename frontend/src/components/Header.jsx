@@ -41,10 +41,11 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="text-2xl font-bold">
-              <span className="text-slate-900">HIMALAYAN</span>
-              <span className="text-teal-600"> eSCAPE</span>
-            </div>
+            <img 
+              src="/assets/logo.jpg" 
+              alt="Himalayan Escape Tour & Travels" 
+              className="h-12 md:h-16 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Menu */}
