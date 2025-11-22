@@ -4,7 +4,7 @@ import { Facebook, Instagram, Twitter, Youtube, Mail, Phone, MapPin } from 'luci
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-white" >
+    <footer className="bg-slate-900 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -82,32 +82,32 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-teal-400">Popular Destinations</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/packages/himachal" className="text-slate-300 hover:text-teal-400 transition-colors">
+                <Link to="/package/1" className="text-slate-300 hover:text-teal-400 transition-colors">
                   Shimla Manali
                 </Link>
               </li>
               <li>
-                <Link to="/packages/himachal" className="text-slate-300 hover:text-teal-400 transition-colors">
+                <Link to="/package/2" className="text-slate-300 hover:text-teal-400 transition-colors">
                   Dharamshala McLeodganj
                 </Link>
               </li>
               <li>
-                <Link to="/packages/himachal" className="text-slate-300 hover:text-teal-400 transition-colors">
+                <Link to="/package/3" className="text-slate-300 hover:text-teal-400 transition-colors">
                   Kasol Kheerganga
                 </Link>
               </li>
               <li>
-                <Link to="/packages/spiti" className="text-slate-300 hover:text-teal-400 transition-colors">
+                <Link to="/package/4" className="text-slate-300 hover:text-teal-400 transition-colors">
                   Spiti Valley
                 </Link>
               </li>
               <li>
-                <Link to="/packages/spiti" className="text-slate-300 hover:text-teal-400 transition-colors">
+                <Link to="/package/5" className="text-slate-300 hover:text-teal-400 transition-colors">
                   Kinnaur Spiti
                 </Link>
               </li>
               <li>
-                <Link to="/packages/spiti" className="text-slate-300 hover:text-teal-400 transition-colors">
+                <Link to="/package/4" className="text-slate-300 hover:text-teal-400 transition-colors">
                   Chandratal Lake
                 </Link>
               </li>
