@@ -9,10 +9,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">
-              <span className="text-white">HIMALAYAN</span>
-              <span className="text-teal-400"> eSCAPE</span>
-            </h3>
+            <Link to="/" className="inline-block mb-4">
+              <img
+                src="/assets/logo.jpg"
+                alt="Himalayan Escape Tour & Travels"
+                className="h-16 w-auto object-contain"
+              />
+            </Link>
             <p className="text-slate-300 mb-4 text-sm leading-relaxed">
               Your trusted partner for unforgettable Himalayan adventures. Explore breathtaking landscapes and create memories that last a lifetime.
             </p>
