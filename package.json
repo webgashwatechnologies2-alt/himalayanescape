@@ -1,6 +1,10 @@
 {
-  "dependencies": {
-    "@craco/craco": "^6.4.3",
-    "react-scripts": "^4.0.3"
+  "name": "himalayan-escape",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd frontend && npm start",
+    "build": "cd frontend && npm install && npm run build",
+    "test": "cd frontend && npm test"
   }
 }
