@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, Phone, Mail } from "lucide-react";
+import EnquiryModal from "./EnquiryModal";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [packagesOpen, setPackagesOpen] = useState(false);
+  const [enquiryModalOpen, setEnquiryModalOpen] = useState(false);
   const location = useLocation();
 
   const isActive = (path) => location.pathname === path;
@@ -41,9 +43,9 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img 
-              src="/assets/logo.jpg" 
-              alt="Himalayan Escape Tour & Travels" 
+            <img
+              src="/assets/logo.jpg"
+              alt="Himalayan Escape Tour & Travels"
               className="h-12 md:h-16 w-auto object-contain"
             />
           </Link>
@@ -52,17 +54,15 @@ const Header = () => {
           <div className="hidden lg:flex items-center gap-8">
             <Link
               to="/"
-              className={`font-medium transition-colors hover:text-teal-600 ${
-                isActive("/") ? "text-teal-600" : "text-slate-700"
-              }`}
+              className={`font-medium transition-colors hover:text-teal-600 ${isActive("/") ? "text-teal-600" : "text-slate-700"
+                }`}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className={`font-medium transition-colors hover:text-teal-600 ${
-                isActive("/about") ? "text-teal-600" : "text-slate-700"
-              }`}
+              className={`font-medium transition-colors hover:text-teal-600 ${isActive("/about") ? "text-teal-600" : "text-slate-700"
+                }`}
             >
               About Us
             </Link>
@@ -78,17 +78,15 @@ const Header = () => {
                 Packages
                 <ChevronDown
                   size={16}
-                  className={`transition-transform ${
-                    packagesOpen ? "rotate-180" : ""
-                  }`}
+                  className={`transition-transform ${packagesOpen ? "rotate-180" : ""
+                    }`}
                 />
               </button>
 
               {/* Dropdown */}
               <div
-                className={`absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-[200px] transition-all duration-150 ${
-                  packagesOpen ? "opacity-100 visible" : "opacity-0 invisible"
-                }`}
+                className={`absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-[200px] transition-all duration-150 ${packagesOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                  }`}
               >
                 <Link
                   to="/packages/himachal"
@@ -108,14 +106,16 @@ const Header = () => {
 
             <Link
               to="/contact"
-              className={`font-medium transition-colors hover:text-teal-600 ${
-                isActive("/contact") ? "text-teal-600" : "text-slate-700"
-              }`}
+              className={`font-medium transition-colors hover:text-teal-600 ${isActive("/contact") ? "text-teal-600" : "text-slate-700"
+                }`}
             >
               Contact
             </Link>
 
-            <button className="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-all hover:shadow-lg transform hover:-translate-y-0.5">
+            <button
+              onClick={() => setEnquiryModalOpen(true)}
+              className="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-all hover:shadow-lg transform hover:-translate-y-0.5"
+            >
               Book Now
             </button>
           </div>
@@ -135,18 +135,16 @@ const Header = () => {
             <div className="flex flex-col gap-4">
               <Link
                 to="/"
-                className={`font-medium ${
-                  isActive("/") ? "text-teal-600" : "text-slate-700"
-                }`}
+                className={`font-medium ${isActive("/") ? "text-teal-600" : "text-slate-700"
+                  }`}
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className={`font-medium ${
-                  isActive("/about") ? "text-teal-600" : "text-slate-700"
-                }`}
+                className={`font-medium ${isActive("/about") ? "text-teal-600" : "text-slate-700"
+                  }`}
                 onClick={() => setIsOpen(false)}
               >
                 About Us
@@ -168,9 +166,8 @@ const Header = () => {
               </Link>
               <Link
                 to="/contact"
-                className={`font-medium ${
-                  isActive("/contact") ? "text-teal-600" : "text-slate-700"
-                }`}
+                className={`font-medium ${isActive("/contact") ? "text-teal-600" : "text-slate-700"
+                  }`}
                 onClick={() => setIsOpen(false)}
               >
                 Contact
@@ -188,6 +185,7 @@ const Header = () => {
           </div>
         )}
       </nav>
+
       {/* Enquiry Modal */}
       <EnquiryModal
         isOpen={enquiryModalOpen}
